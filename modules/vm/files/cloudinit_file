@@ -1,0 +1,10 @@
+users:
+  - name: ubuntu
+    ssh_authorized_keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDSvNxCzMv/1FPXT76l8NRdfYGqkhGIleec8d6nH5eK5qy0rAn4JdKmKV2Fz/5CsqWvtewAUm60IHfIBFYdK42CV0or2pWGqEjfezTrpDUJjh86zHLpghTF+tdNfrjPB5yPu/+zFcLadL9ESOD7aCQnOkiGT+IWjiKn6ZtisL9ypi7wc8RaIB5ARQALtzIEV/eMQgK5OS6+ZR25HvACt/85j6FxRWLyAvoHZh/hPceAzSPPcFtIcsew8/QY+RJzm5DF6+otiIkALckOnz+DYxcXoio+n8p9GjqrEuP0hHFS0RL6voqv9Nnx6yRaEt87LZyxLQZspUf8Qwm4XX57XKrtClHEq/bdKEdzDAXH++t3avzJUM2UPIOjLtys6h95LCeIaGRb+4bsrGPJKqEcuW5nGAfLPy5/jI/XWKMDgrplcZQkudLgfUwx71UTRD9NkkY3JRlrxx1J/BqbZx8DvWm1b8BdIbNsirqI2zjUDcQH1sBqfaaN+n1HYAZdCB7iBKG8IN4PCk5pLP6qrz6kYzGaGaHUaRF2i5XHoOqYXf+kMrZRVr7p7RePu8vrRHS4aKB4q0jHz+5bSjYSr7mJWUZWarRmBgl27RDDrn9oWOeLCZ9pBjEa+lSXquYc6+ArqsnZPivXKYcPYToO+DY8b8rkjCq+p/oN91exjkLdbhnBMQ== 237643381@qq.com
+runcmd:
+  - echo "export https_proxy=http://192.168.64.1:7890 http_proxy=http://192.168.64.1:7890 all_proxy=socks5://192.168.64.1:7890" >> /home/ubuntu/.bashrc
+  - echo "export https_proxy=http://192.168.64.1:7890 http_proxy=http://192.168.64.1:7890 all_proxy=socks5://192.168.64.1:7890" >> /root/.bashrc
+ 
+      
+ 
