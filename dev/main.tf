@@ -1,12 +1,12 @@
 module "vm" {
   source = "../modules/vm"
   providers = {
-    
+
   }
 }
 
 module "k3s" {
-  source = "../modules/k3s"
+  source     = "../modules/k3s"
   private_ip = module.vm.k3server.ipv4
 }
 

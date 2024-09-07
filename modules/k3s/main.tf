@@ -16,11 +16,11 @@ module "k3s" {
     "k3s" = {
       ip = var.private_ip
       connection = {
-        timeout  = "60s"
-        type     = "ssh"
+        timeout     = "60s"
+        type        = "ssh"
         private_key = file(var.private_key_path)
-        host     = var.private_ip
-        user     = var.user
+        host        = var.private_ip
+        user        = var.user
       }
     }
   }
