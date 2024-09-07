@@ -20,3 +20,4 @@ resource "local_sensitive_file" "kubeconfig" {
   filename = "${path.module}/config.yaml"
 }
 
+
