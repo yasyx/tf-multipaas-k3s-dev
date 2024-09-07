@@ -35,5 +35,4 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
-dev/.env
-dev/backend.tf
+dev/config.yaml
