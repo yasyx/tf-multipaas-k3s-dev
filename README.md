@@ -5,7 +5,7 @@
 - k3s在安装过程中会通过ssh到vm里执行一些命令，ssh当前我用的是免密，有需要的话大家可以自行修改为自己的公钥，或者直接修改为密码登录。可以直接修改[`modules/vm/cloudinit_file`](https://github.com/yasyx/tf-multipaas-k3s-dev/blob/783a1ab9dac8a820622c92fbcfc5bf21696371b8/modules/vm/files/cloudinit_file)中的内容
 - 对`cloudinit`不熟悉的同学，可以参考 [`cloudinit`](https://cloudinit.readthedocs.io/en/latest/reference/modules.html) 这个链接。 我这里仅用到了两个modules [`user-and-groups`](https://cloudinit.readthedocs.io/en/latest/reference/modules.html#users-and-groups) , [`runcmd`](https://cloudinit.readthedocs.io/en/latest/reference/modules.html#runcmd)
 
-#### What I have do
+#### What have I done
 - Create a vm called `k3server`.
 - Create a `k8s` instance by `k3s`.
 - Delpoy `argocd` in `k3s` by `helm`.
