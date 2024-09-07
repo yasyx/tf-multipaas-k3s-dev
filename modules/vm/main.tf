@@ -1,5 +1,3 @@
-provider "multipass" {}
-
 
 resource "multipass_instance" "k3server" {
   cloudinit_file = "${path.module}/files/cloudinit_file"
